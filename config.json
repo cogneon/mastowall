@@ -1,6 +1,6 @@
 {
-  "navbarBrandText": "Mastowall 2 - written by AI - Prompting: Ralf Stockmann (rstockm)",
-  "defaultServerUrl": "https://mastodon.social",
-  "navbarColor": "#333355",
+  "navbarBrandText": "Cogneon Akademie Mastowall",
+  "defaultServerUrl": "https://colearn.social",
+  "navbarColor": "#ff6600",
   "includeReplies": true
 }
