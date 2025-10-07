@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mastowall 2</title>
+    <title>Cogneon Mastowall</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -16,20 +16,20 @@
         <span class="navbar-info d-none d-md-block" id="hashtag-display"></span>
         <div id="view-toggle" class="d-none">
             <div class="btn-group" role="group" aria-label="Navigation">
-                <button id="toggle-posts" class="btn btn-sm btn-primary" title="Posts">
+                <button id="toggle-posts" class="btn btn-sm btn-primary" title="Beiträge">
                     <i class="fas fa-th"></i>
                 </button>
-                <button id="toggle-people" class="btn btn-sm btn-outline-primary" title="People">
+                <button id="toggle-people" class="btn btn-sm btn-outline-primary" title="Menschen">
                     <i class="fas fa-users"></i>
                 </button>
-                <button id="share-btn" class="btn btn-sm btn-outline-primary" title="Share URL">
+                <button id="share-btn" class="btn btn-sm btn-outline-primary" title="Teile URL">
                     <i class="fas fa-external-link-alt"></i>
                 </button>
-                <button id="settings-btn" class="btn btn-sm btn-outline-primary" title="Settings">
+                <button id="settings-btn" class="btn btn-sm btn-outline-primary" title="Einstellungen">
                     <i class="fas fa-cog"></i>
                 </button>
             </div>
-            <i id="connect-status-icon" class="fas fa-unlink" title="Not connected"></i>
+            <i id="connect-status-icon" class="fas fa-unlink" title="Nicht verbunden"></i>
         </div>
         <button id="mobile-burger" class="mobile-burger d-none" aria-label="Menu">
             <i class="fas fa-bars"></i>
@@ -42,8 +42,8 @@
               <div class="col-md-8 col-lg-6">
                   <div class="zero-state-card">
                       <div class="zero-state-header">
-                          <h2 class="zero-state-title">Welcome to the Mastowall</h2>
-                          <p class="zero-state-subtitle">Please enter up to three hashtags to load posts:</p>
+                          <h2 class="zero-state-title">Mastowall Konfiguration</h2>
+                          <p class="zero-state-subtitle">Bitte gib bis zu drei Hashtags an, um Beiträge zu laden:</p>
                       </div>
                       <form id="hashtag-form" class="zero-state-form">
                         <div class="form-group">
@@ -72,8 +72,8 @@
                             </div>
                         </div>
                       
-                        <button type="submit" class="btn btn-primary btn-lg mt-3">Reload</button>
-                        <p class="zero-state-tip mt-3">Tip: For better hashtag combinations use <a href="https://rstockm.github.io/mastotags/" target="_blank" rel="noopener">Mastotags</a>.</p>
+                        <button type="submit" class="btn btn-primary btn-lg mt-3">Speichern</button>
+                        <p class="zero-state-tip mt-3">Tipp: Nutze für bessere Hashtag-Kombinationen <a href="https://rstockm.github.io/mastotags/" target="_blank" rel="noopener">Mastotags</a>.</p>
                       </form>
                   </div>
               </div>
@@ -87,7 +87,7 @@
 
     <div id="people-container" class="container d-none">
         <div class="text-center py-5">
-            <h3>People</h3>
+            <h3>Menschen</h3>
             <p class="text-muted">Author list will appear here</p>
         </div>
     </div>
@@ -146,19 +146,19 @@
             <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close">×</button>
             <div class="mobile-menu-items">
                 <button class="mobile-menu-item" data-action="posts">
-                    <i class="fas fa-th"></i><span>Posts</span>
+                    <i class="fas fa-th"></i><span>Beiträge</span>
                 </button>
                 <button class="mobile-menu-item" data-action="people">
-                    <i class="fas fa-users"></i><span>People</span>
+                    <i class="fas fa-users"></i><span>Menschen</span>
                 </button>
                 <button class="mobile-menu-item" data-action="share">
-                    <i class="fas fa-external-link-alt"></i><span>Share</span>
+                    <i class="fas fa-external-link-alt"></i><span>Teile</span>
                 </button>
                 <button class="mobile-menu-item" data-action="settings">
-                    <i class="fas fa-cog"></i><span>Settings</span>
+                    <i class="fas fa-cog"></i><span>Einstellungen</span>
                 </button>
                 <button class="mobile-menu-item" id="mobile-connect" data-action="connect">
-                    <i class="fas fa-unlink"></i><span>Connect</span>
+                    <i class="fas fa-unlink"></i><span>Verbinden</span>
                 </button>
             </div>
         </div>
